@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <title>QR Creator | CodeCraze</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="color-pick">
+            <input type="color" class="qr-light" value="#ffffff">
+            <input type="color" class="qr-dark">
+            <select class="dimension">
+                <option value="100">Small (100×100)</option>
+                <option value="200">Medium (200×200)</option>
+                <option value="300">Large (300×300)</option>
+                <option selected value="400">X-Large (400×400)</option>
+                <option value="500">XX-Large (500×500)</option>
+                <option value="600">3X-Large (600×600)</option>
+                <option value="700">4X-Large (700×700)</option>
+                <option value="800">5X-Large (800×800)</option>
+                <option value="900">6X-Large (900×900)</option>
+                <option value="1000">Maximum (1000×1000)</option>
+            </select>
+        </div>
+        <input type="text" class="input-text" placeholder="Type text for QR code">
+        <div id="qr-render"></div>
+        <div class="control-panel">
+            <a href="#" class="get btn" download="MyQRCode">
+                <span>Save QR</span>
+                <img src="save-icon.svg" alt="Download Icon">
+            </a>
+            <button class="btn send-btn">
+                <span>Send QR</span>
+                <img src="send-icon.svg" alt="Share Icon">
+            </button>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
